@@ -1,4 +1,5 @@
 #include <stdio.h>
+//empate
 
 
 int main(void) {
@@ -43,7 +44,7 @@ while(v !=1){
 for(j=0; j<3; j++){
     printf("%c  " , arr[2][j]);
   }
-   printf("\n\n");
+   printf("\n");
 
   printf("X joga:\n");
   int x;
@@ -299,21 +300,8 @@ for(j=0; j<3; j++){
     v= 1;
     break;
   }
-    
-   else if(a1&&a2&&a3&&a4&&a5&&a6&&a7&&a8&&a9==1){
-          for(j=0; j<3; j++){
-    printf("%c  " , arr[0][j]);
-  }
-   printf("\n");
-  for(j=0; j<3; j++){
-    printf("%c  " , arr[1][j]);
-  }
-   printf("\n");
-for(j=0; j<3; j++){
-    printf("%c  " , arr[2][j]);
-  }
-   printf("\n");
-     printf("Empate!!!");
+     else if(a1==a2==a3==a4==a5==a6==a7==a8==a9==1){
+       printf("Empate!!!");
        v=1;
        break;
      }
@@ -331,7 +319,7 @@ while(1){
 for(j=0; j<3; j++){
     printf("%c  " , arr[2][j]);
   }
-   printf("\n\n");
+   printf("\n");
 
   
   printf("O joga:\n");
