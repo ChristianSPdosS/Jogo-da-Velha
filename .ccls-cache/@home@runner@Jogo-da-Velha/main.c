@@ -1,6 +1,6 @@
 #include <stdio.h>
-//empate
 
+// barrar valores inválidos
 
 int main(void) {
 
@@ -31,6 +31,7 @@ int main(void) {
     int a8= 0;
     int a9= 0;
   int w=1;
+  int num[]= {1,2,3,4,5,6,7,8,9};
   
 while(v !=1){
   for(j=0; j<3; j++){
@@ -44,13 +45,17 @@ while(v !=1){
 for(j=0; j<3; j++){
     printf("%c  " , arr[2][j]);
   }
-   printf("\n");
+   printf("\n\n");
 
   printf("X joga:\n");
   int x;
   scanf("%d" , &x);
+  getchar();
+  if(x != 1&&x != 2&&x != 3&&x != 4&&x != 5&&x != 6&&x != 7&&x != 8&&x != 9){
+    printf("Escolha um valor válido!\n");
+    continue;
+  }
 
-  
   if(x==1){
 
     if(a1==1){
@@ -156,6 +161,7 @@ for(j=0; j<3; j++){
       a9= 1;
         }
   }
+  
 
   if(arr[0][0] == arr[0][1] && arr[0][1] == arr[0][2]){
      for(j=0; j<3; j++){
@@ -300,8 +306,21 @@ for(j=0; j<3; j++){
     v= 1;
     break;
   }
-     else if(a1==a2==a3==a4==a5==a6==a7==a8==a9==1){
-       printf("Empate!!!");
+    
+   else if(a1&&a2&&a3&&a4&&a5&&a6&&a7&&a8&&a9==1){
+          for(j=0; j<3; j++){
+    printf("%c  " , arr[0][j]);
+  }
+   printf("\n");
+  for(j=0; j<3; j++){
+    printf("%c  " , arr[1][j]);
+  }
+   printf("\n");
+for(j=0; j<3; j++){
+    printf("%c  " , arr[2][j]);
+  }
+   printf("\n");
+     printf("Empate!!!");
        v=1;
        break;
      }
@@ -319,12 +338,18 @@ while(1){
 for(j=0; j<3; j++){
     printf("%c  " , arr[2][j]);
   }
-   printf("\n");
+   printf("\n\n");
 
   
   printf("O joga:\n");
   int o;
   scanf("%d" , &o);
+ getchar();
+  if(o != 1&&o != 2&&o != 3&&o != 4&&o != 5&&o != 6&&o != 7&&o != 8&&o != 9){
+    printf("Escolha um valor válido!\n");
+    continue;
+  }
+
 
   if(o==1){
      
@@ -434,7 +459,9 @@ for(j=0; j<3; j++){
       a9= 1;
       break;
         }
+    
   }
+ 
     } 
     
   
