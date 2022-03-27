@@ -1,7 +1,5 @@
 #include <stdio.h>
 
-// barrar valores inválidos
-
 int main(void) {
 
  char arr[3][3];
@@ -34,18 +32,20 @@ int main(void) {
   int num[]= {1,2,3,4,5,6,7,8,9};
   
 while(v !=1){
-  for(j=0; j<3; j++){
-    printf("%c  " , arr[0][j]);
-  }
-   printf("\n");
-  for(j=0; j<3; j++){
-    printf("%c  " , arr[1][j]);
-  }
-   printf("\n");
-for(j=0; j<3; j++){
-    printf("%c  " , arr[2][j]);
-  }
-   printf("\n\n");
+ 
+    printf(" %c |" , arr[0][0]);
+   printf(" %c |" , arr[0][1]);
+   printf(" %c \n" , arr[0][2]);
+   printf("---+---+---\n");
+ 
+  printf(" %c |" , arr[1][0]);
+   printf(" %c |" , arr[1][1]);
+   printf(" %c \n" , arr[1][2]);
+  printf("---+---+---\n");
+
+  printf(" %c |" , arr[2][0]);
+   printf(" %c |" , arr[2][1]);
+   printf(" %c \n\n" , arr[2][2]);
 
   printf("X joga:\n");
   int x;
@@ -164,162 +164,189 @@ for(j=0; j<3; j++){
   
 
   if(arr[0][0] == arr[0][1] && arr[0][1] == arr[0][2]){
-     for(j=0; j<3; j++){
-    printf("%c  " , arr[0][j]);
-  }
-   printf("\n");
-  for(j=0; j<3; j++){
-    printf("%c  " , arr[1][j]);
-  }
-   printf("\n");
-for(j=0; j<3; j++){
-    printf("%c  " , arr[2][j]);
-  }
-   printf("\n");
+    
+    printf(" %c |" , arr[0][0]);
+   printf(" %c |" , arr[0][1]);
+   printf(" %c \n" , arr[0][2]);
+   printf("---+---+---\n");
+ 
+  printf(" %c |" , arr[1][0]);
+   printf(" %c |" , arr[1][1]);
+   printf(" %c \n" , arr[1][2]);
+  printf("---+---+---\n");
+
+  printf(" %c |" , arr[2][0]);
+   printf(" %c |" , arr[2][1]);
+   printf(" %c \n\n" , arr[2][2]);
+
     printf("X ganhou!!!");
     v= 1;
     break;
   }
 
    else if(arr[1][0] == arr[1][1] && arr[1][1] == arr[1][2]){
-     for(j=0; j<3; j++){
-    printf("%c  " , arr[0][j]);
-  }
-   printf("\n");
-  for(j=0; j<3; j++){
-    printf("%c  " , arr[1][j]);
-  }
-   printf("\n");
-for(j=0; j<3; j++){
-    printf("%c  " , arr[2][j]);
-  }
-   printf("\n");
+    
+    printf(" %c |" , arr[0][0]);
+   printf(" %c |" , arr[0][1]);
+   printf(" %c \n" , arr[0][2]);
+   printf("---+---+---\n");
+ 
+  printf(" %c |" , arr[1][0]);
+   printf(" %c |" , arr[1][1]);
+   printf(" %c \n" , arr[1][2]);
+  printf("---+---+---\n");
+
+  printf(" %c |" , arr[2][0]);
+   printf(" %c |" , arr[2][1]);
+   printf(" %c \n\n" , arr[2][2]);
+
     printf("X ganhou!!!");
     v= 1;
     break;
   }
 
    else if(arr[2][0] == arr[2][1] && arr[2][1] == arr[2][2]){
-     for(j=0; j<3; j++){
-    printf("%c  " , arr[0][j]);
-  }
-   printf("\n");
-  for(j=0; j<3; j++){
-    printf("%c  " , arr[1][j]);
-  }
-   printf("\n");
-for(j=0; j<3; j++){
-    printf("%c  " , arr[2][j]);
-  }
-   printf("\n");
+     
+    printf(" %c |" , arr[0][0]);
+   printf(" %c |" , arr[0][1]);
+   printf(" %c \n" , arr[0][2]);
+   printf("---+---+---\n");
+ 
+  printf(" %c |" , arr[1][0]);
+   printf(" %c |" , arr[1][1]);
+   printf(" %c \n" , arr[1][2]);
+  printf("---+---+---\n");
+
+  printf(" %c |" , arr[2][0]);
+   printf(" %c |" , arr[2][1]);
+   printf(" %c \n\n" , arr[2][2]);
+
     printf("X ganhou!!!");
     v= 1;
     break;
   }
 
   else if(arr[0][0] == arr[1][0] && arr[1][0] == arr[2][0]){
-     for(j=0; j<3; j++){
-    printf("%c  " , arr[0][j]);
-  }
-   printf("\n");
-  for(j=0; j<3; j++){
-    printf("%c  " , arr[1][j]);
-  }
-   printf("\n");
-for(j=0; j<3; j++){
-    printf("%c  " , arr[2][j]);
-  }
-   printf("\n");
+    
+    printf(" %c |" , arr[0][0]);
+   printf(" %c |" , arr[0][1]);
+   printf(" %c \n" , arr[0][2]);
+   printf("---+---+---\n");
+ 
+  printf(" %c |" , arr[1][0]);
+   printf(" %c |" , arr[1][1]);
+   printf(" %c \n" , arr[1][2]);
+  printf("---+---+---\n");
+
+  printf(" %c |" , arr[2][0]);
+   printf(" %c |" , arr[2][1]);
+   printf(" %c \n\n" , arr[2][2]);
+
     printf("X ganhou!!!");
     v= 1;
     break;
   }
 
   else if(arr[0][1] == arr[1][1] && arr[1][1] == arr[2][1]){
-     for(j=0; j<3; j++){
-    printf("%c  " , arr[0][j]);
-  }
-   printf("\n");
-  for(j=0; j<3; j++){
-    printf("%c  " , arr[1][j]);
-  }
-   printf("\n");
-for(j=0; j<3; j++){
-    printf("%c  " , arr[2][j]);
-  }
-   printf("\n");
+     
+    printf(" %c |" , arr[0][0]);
+   printf(" %c |" , arr[0][1]);
+   printf(" %c \n" , arr[0][2]);
+   printf("---+---+---\n");
+ 
+  printf(" %c |" , arr[1][0]);
+   printf(" %c |" , arr[1][1]);
+   printf(" %c \n" , arr[1][2]);
+  printf("---+---+---\n");
+
+  printf(" %c |" , arr[2][0]);
+   printf(" %c |" , arr[2][1]);
+   printf(" %c \n\n" , arr[2][2]);
+
     printf("X ganhou!!!");
     v= 1;
     break;
   }
 
   else if(arr[0][2] == arr[1][2] && arr[1][2] == arr[2][2]){
-     for(j=0; j<3; j++){
-    printf("%c  " , arr[0][j]);
-  }
-   printf("\n");
-  for(j=0; j<3; j++){
-    printf("%c  " , arr[1][j]);
-  }
-   printf("\n");
-for(j=0; j<3; j++){
-    printf("%c  " , arr[2][j]);
-  }
-   printf("\n");
+    
+    printf(" %c |" , arr[0][0]);
+   printf(" %c |" , arr[0][1]);
+   printf(" %c \n" , arr[0][2]);
+   printf("---+---+---\n");
+ 
+  printf(" %c |" , arr[1][0]);
+   printf(" %c |" , arr[1][1]);
+   printf(" %c \n" , arr[1][2]);
+  printf("---+---+---\n");
+
+  printf(" %c |" , arr[2][0]);
+   printf(" %c |" , arr[2][1]);
+   printf(" %c \n\n" , arr[2][2]);
+
     printf("X ganhou!!!");
     v= 1;
     break;
   }
 
   else if(arr[0][0] == arr[1][1] && arr[1][1] == arr[2][2]){
-     for(j=0; j<3; j++){
-    printf("%c  " , arr[0][j]);
-  }
-   printf("\n");
-  for(j=0; j<3; j++){
-    printf("%c  " , arr[1][j]);
-  }
-   printf("\n");
-for(j=0; j<3; j++){
-    printf("%c  " , arr[2][j]);
-  }
-   printf("\n");
+    
+    printf(" %c |" , arr[0][0]);
+   printf(" %c |" , arr[0][1]);
+   printf(" %c \n" , arr[0][2]);
+   printf("---+---+---\n");
+ 
+  printf(" %c |" , arr[1][0]);
+   printf(" %c |" , arr[1][1]);
+   printf(" %c \n" , arr[1][2]);
+  printf("---+---+---\n");
+
+  printf(" %c |" , arr[2][0]);
+   printf(" %c |" , arr[2][1]);
+   printf(" %c \n\n" , arr[2][2]);
+
     printf("X ganhou!!!");
     v= 1;
     break;
   }
 
    else if(arr[0][2] == arr[1][1] && arr[1][1] == arr[2][0]){
-     for(j=0; j<3; j++){
-    printf("%c  " , arr[0][j]);
-  }
-   printf("\n");
-  for(j=0; j<3; j++){
-    printf("%c  " , arr[1][j]);
-  }
-   printf("\n");
-for(j=0; j<3; j++){
-    printf("%c  " , arr[2][j]);
-  }
-   printf("\n");
+    
+    printf(" %c |" , arr[0][0]);
+   printf(" %c |" , arr[0][1]);
+   printf(" %c \n" , arr[0][2]);
+   printf("---+---+---\n");
+ 
+  printf(" %c |" , arr[1][0]);
+   printf(" %c |" , arr[1][1]);
+   printf(" %c \n" , arr[1][2]);
+  printf("---+---+---\n");
+
+  printf(" %c |" , arr[2][0]);
+   printf(" %c |" , arr[2][1]);
+   printf(" %c \n\n" , arr[2][2]);
+
     printf("X ganhou!!!");
     v= 1;
     break;
   }
     
    else if(a1&&a2&&a3&&a4&&a5&&a6&&a7&&a8&&a9==1){
-          for(j=0; j<3; j++){
-    printf("%c  " , arr[0][j]);
-  }
-   printf("\n");
-  for(j=0; j<3; j++){
-    printf("%c  " , arr[1][j]);
-  }
-   printf("\n");
-for(j=0; j<3; j++){
-    printf("%c  " , arr[2][j]);
-  }
-   printf("\n");
+        
+    printf(" %c |" , arr[0][0]);
+   printf(" %c |" , arr[0][1]);
+   printf(" %c \n" , arr[0][2]);
+   printf("---+---+---\n");
+ 
+  printf(" %c |" , arr[1][0]);
+   printf(" %c |" , arr[1][1]);
+   printf(" %c \n" , arr[1][2]);
+  printf("---+---+---\n");
+
+  printf(" %c |" , arr[2][0]);
+   printf(" %c |" , arr[2][1]);
+   printf(" %c \n\n" , arr[2][2]);
+
      printf("Empate!!!");
        v=1;
        break;
@@ -327,18 +354,20 @@ for(j=0; j<3; j++){
 else
      
 while(1){
-   for(j=0; j<3; j++){
-    printf("%c  " , arr[0][j]);
-  }
-   printf("\n");
-  for(j=0; j<3; j++){
-    printf("%c  " , arr[1][j]);
-  }
-   printf("\n");
-for(j=0; j<3; j++){
-    printf("%c  " , arr[2][j]);
-  }
-   printf("\n\n");
+  
+    printf(" %c |" , arr[0][0]);
+   printf(" %c |" , arr[0][1]);
+   printf(" %c \n" , arr[0][2]);
+   printf("---+---+---\n");
+ 
+  printf(" %c |" , arr[1][0]);
+   printf(" %c |" , arr[1][1]);
+   printf(" %c \n" , arr[1][2]);
+  printf("---+---+---\n");
+
+  printf(" %c |" , arr[2][0]);
+   printf(" %c |" , arr[2][1]);
+   printf(" %c \n\n" , arr[2][2]);
 
   
   printf("O joga:\n");
@@ -466,144 +495,168 @@ for(j=0; j<3; j++){
     
   
   if(arr[0][0] == arr[0][1] && arr[0][1] == arr[0][2]){
-     for(j=0; j<3; j++){
-    printf("%c  " , arr[0][j]);
-  }
-   printf("\n");
-  for(j=0; j<3; j++){
-    printf("%c  " , arr[1][j]);
-  }
-   printf("\n");
-for(j=0; j<3; j++){
-    printf("%c  " , arr[2][j]);
-  }
-   printf("\n");
+     
+    printf(" %c |" , arr[0][0]);
+   printf(" %c |" , arr[0][1]);
+   printf(" %c \n" , arr[0][2]);
+   printf("---+---+---\n");
+ 
+  printf(" %c |" , arr[1][0]);
+   printf(" %c |" , arr[1][1]);
+   printf(" %c \n" , arr[1][2]);
+  printf("---+---+---\n");
+
+  printf(" %c |" , arr[2][0]);
+   printf(" %c |" , arr[2][1]);
+   printf(" %c \n\n" , arr[2][2]);
+
     printf("O ganhou!!!");
     v= 1;
     break;
   }
 
    else if(arr[1][0] == arr[1][1] && arr[1][1] == arr[1][2]){
-     for(j=0; j<3; j++){
-    printf("%c  " , arr[0][j]);
-  }
-   printf("\n");
-  for(j=0; j<3; j++){
-    printf("%c  " , arr[1][j]);
-  }
-   printf("\n");
-for(j=0; j<3; j++){
-    printf("%c  " , arr[2][j]);
-  }
-   printf("\n");
+     
+    printf(" %c |" , arr[0][0]);
+   printf(" %c |" , arr[0][1]);
+   printf(" %c \n" , arr[0][2]);
+   printf("---+---+---\n");
+ 
+  printf(" %c |" , arr[1][0]);
+   printf(" %c |" , arr[1][1]);
+   printf(" %c \n" , arr[1][2]);
+  printf("---+---+---\n");
+
+  printf(" %c |" , arr[2][0]);
+   printf(" %c |" , arr[2][1]);
+   printf(" %c \n\n" , arr[2][2]);
+
     printf("O ganhou!!!");
     v= 1;
     break;
   }
 
    else if(arr[2][0] == arr[2][1] && arr[2][1] == arr[2][2]){
-     for(j=0; j<3; j++){
-    printf("%c  " , arr[0][j]);
-  }
-   printf("\n");
-  for(j=0; j<3; j++){
-    printf("%c  " , arr[1][j]);
-  }
-   printf("\n");
-for(j=0; j<3; j++){
-    printf("%c  " , arr[2][j]);
-  }
-   printf("\n");
+    
+    printf(" %c |" , arr[0][0]);
+   printf(" %c |" , arr[0][1]);
+   printf(" %c \n" , arr[0][2]);
+   printf("---+---+---\n");
+ 
+  printf(" %c |" , arr[1][0]);
+   printf(" %c |" , arr[1][1]);
+   printf(" %c \n" , arr[1][2]);
+  printf("---+---+---\n");
+
+  printf(" %c |" , arr[2][0]);
+   printf(" %c |" , arr[2][1]);
+   printf(" %c \n\n" , arr[2][2]);
+
     printf("O ganhou!!!");
     v= 1;
     break;
   }
 
   else if(arr[0][0] == arr[1][0] && arr[1][0] == arr[2][0]){
-     for(j=0; j<3; j++){
-    printf("%c  " , arr[0][j]);
-  }
-   printf("\n");
-  for(j=0; j<3; j++){
-    printf("%c  " , arr[1][j]);
-  }
-   printf("\n");
-for(j=0; j<3; j++){
-    printf("%c  " , arr[2][j]);
-  }
-   printf("\n");
+    
+    printf(" %c |" , arr[0][0]);
+   printf(" %c |" , arr[0][1]);
+   printf(" %c \n" , arr[0][2]);
+   printf("---+---+---\n");
+ 
+  printf(" %c |" , arr[1][0]);
+   printf(" %c |" , arr[1][1]);
+   printf(" %c \n" , arr[1][2]);
+  printf("---+---+---\n");
+
+  printf(" %c |" , arr[2][0]);
+   printf(" %c |" , arr[2][1]);
+   printf(" %c \n\n" , arr[2][2]);
+
     printf("O ganhou!!!");
     v= 1;
     break;
   }
 
   else if(arr[0][1] == arr[1][1] && arr[1][1] == arr[2][1]){
-     for(j=0; j<3; j++){
-    printf("%c  " , arr[0][j]);
-  }
-   printf("\n");
-  for(j=0; j<3; j++){
-    printf("%c  " , arr[1][j]);
-  }
-   printf("\n");
-for(j=0; j<3; j++){
-    printf("%c  " , arr[2][j]);
-  }
-   printf("\n");
+  
+    printf(" %c |" , arr[0][0]);
+   printf(" %c |" , arr[0][1]);
+   printf(" %c \n" , arr[0][2]);
+   printf("---+---+---\n");
+ 
+  printf(" %c |" , arr[1][0]);
+   printf(" %c |" , arr[1][1]);
+   printf(" %c \n" , arr[1][2]);
+  printf("---+---+---\n");
+
+  printf(" %c |" , arr[2][0]);
+   printf(" %c |" , arr[2][1]);
+   printf(" %c \n\n" , arr[2][2]);
+
     printf("O ganhou!!!");
     v= 1;
     break;
   }
 
   else if(arr[0][2] == arr[1][2] && arr[1][2] == arr[2][2]){
-     for(j=0; j<3; j++){
-    printf("%c  " , arr[0][j]);
-  }
-   printf("\n");
-  for(j=0; j<3; j++){
-    printf("%c  " , arr[1][j]);
-  }
-   printf("\n");
-for(j=0; j<3; j++){
-    printf("%c  " , arr[2][j]);
-  }
-   printf("\n");
+     
+    printf(" %c |" , arr[0][0]);
+   printf(" %c |" , arr[0][1]);
+   printf(" %c \n" , arr[0][2]);
+   printf("---+---+---\n");
+ 
+  printf(" %c |" , arr[1][0]);
+   printf(" %c |" , arr[1][1]);
+   printf(" %c \n" , arr[1][2]);
+  printf("---+---+---\n");
+
+  printf(" %c |" , arr[2][0]);
+   printf(" %c |" , arr[2][1]);
+   printf(" %c \n\n" , arr[2][2]);
+
     printf("O ganhou!!!");
     v= 1;
     break;
   }
 
   else if(arr[0][0] == arr[1][1] && arr[1][1] == arr[2][2]){
-     for(j=0; j<3; j++){
-    printf("%c  " , arr[0][j]);
-  }
-   printf("\n");
-  for(j=0; j<3; j++){
-    printf("%c  " , arr[1][j]);
-  }
-   printf("\n");
-for(j=0; j<3; j++){
-    printf("%c  " , arr[2][j]);
-  }
-   printf("\n");
+     
+    printf(" %c |" , arr[0][0]);
+   printf(" %c |" , arr[0][1]);
+   printf(" %c \n" , arr[0][2]);
+   printf("---+---+---\n");
+ 
+  printf(" %c |" , arr[1][0]);
+   printf(" %c |" , arr[1][1]);
+   printf(" %c \n" , arr[1][2]);
+  printf("---+---+---\n");
+
+  printf(" %c |" , arr[2][0]);
+   printf(" %c |" , arr[2][1]);
+   printf(" %c \n\n" , arr[2][2]);
+
     printf("O ganhou!!!");
     v= 1;
     break;
   }
 
    else if(arr[0][2] == arr[1][1] && arr[1][1] == arr[2][0]){
-     for(j=0; j<3; j++){
-    printf("%c  " , arr[0][j]);
-  }
-   printf("\n");
-  for(j=0; j<3; j++){
-    printf("%c  " , arr[1][j]);
-  }
-   printf("\n");
-for(j=0; j<3; j++){
-    printf("%c  " , arr[2][j]);
-  }
-   printf("\n");
+     
+    printf(" %c |" , arr[0][0]);
+   printf(" %c |" , arr[0][1]);
+   printf(" %c \n" , arr[0][2]);
+   printf("---+---+---\n");
+ 
+  printf(" %c |" , arr[1][0]);
+   printf(" %c |" , arr[1][1]);
+   printf(" %c \n" , arr[1][2]);
+  printf("---+---+---\n");
+
+  printf(" %c |" , arr[2][0]);
+   printf(" %c |" , arr[2][1]);
+   printf(" %c \n\n" , arr[2][2]);
+
     printf("O ganhou!!!");
     v= 1;
     break;
