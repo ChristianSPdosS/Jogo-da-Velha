@@ -2,7 +2,7 @@
 
 //player.forma com + de 1 caractere
 //Trocar os números por posições
-//Forma do 1 e do 2 não podem ser iguais
+//Nome do 1 e do 2 não podem ser iguais
 
 
 
@@ -22,19 +22,35 @@ t_jogador player2;
   scanf("%[^\n]" , player1.nome);
   printf("Digite o caractere que deseja utilizar: \n");
   getchar();
- scanf("%c" , &player1.forma);
-  
-  
+ scanf("%c" , &player1.forma); 
 
-   printf("Jogador 2: digite seu nome:\n");
+  int k= 0;
+   int g= 0; 
+  
+  printf("Jogador 2: digite seu nome:\n");
   getchar();
+  while(g != 1){
   scanf("%[^\n]" , player2.nome);
+
+    if(player1.nome == player2.nome){
+      printf("%s já escolheu esse nome escolha outro: \n" , player1.nome);
+      continue;
+    }
+
+    g= 1;
+    }
   printf("Digite o caractere que deseja utilizar: \n");
   getchar();
+  while(k != 1){
 scanf("%c" , &player2.forma);
   getchar();
-  
-  
+
+  if(player1.forma == player2.forma){
+    printf("%s já escolheu esse caractere, escolha outro:\n" , player1.nome);
+    continue;
+  }
+      k= 1;
+      }
 
   
   char arr[3][3];
