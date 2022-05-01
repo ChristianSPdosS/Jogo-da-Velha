@@ -1,5 +1,3 @@
-
-
 //player.forma com + de 1 caractere
 //Trocar os números por posições
 //Nome do 1 e do 2 não podem ser iguais
@@ -8,6 +6,22 @@
 
 #include <stdio.h>
 
+void jogo(char arr[3][3]){
+   printf("     1   2   3\n\n");
+    printf(" a   %c |", arr[0][0]);
+    printf(" %c |", arr[0][1]);
+    printf(" %c \n", arr[0][2]);
+    printf("    ---+---+---\n");
+
+    printf(" b   %c |", arr[1][0]);
+    printf(" %c |", arr[1][1]);
+    printf(" %c \n", arr[1][2]);
+    printf("    ---+---+---\n");
+
+    printf(" c   %c |", arr[2][0]);
+    printf(" %c |", arr[2][1]);
+    printf(" %c \n\n", arr[2][2]);
+}
 typedef struct Jogador{
  char nome[30];
 char forma;
@@ -83,20 +97,7 @@ scanf("%c" , &player2.forma);
 
   while (v != 1) {
 
-    printf("     1   2   3\n\n");
-    printf(" a   %c |", arr[0][0]);
-    printf(" %c |", arr[0][1]);
-    printf(" %c \n", arr[0][2]);
-    printf("    ---+---+---\n");
-
-    printf(" b   %c |", arr[1][0]);
-    printf(" %c |", arr[1][1]);
-    printf(" %c \n", arr[1][2]);
-    printf("    ---+---+---\n");
-
-    printf(" c   %c |", arr[2][0]);
-    printf(" %c |", arr[2][1]);
-    printf(" %c \n\n", arr[2][2]);
+    jogo(arr);
 
     printf("%s joga:\n" , player1.nome);
     int x;
@@ -207,20 +208,7 @@ scanf("%c" , &player2.forma);
 
     if (arr[0][0] == arr[0][1] && arr[0][1] == arr[0][2] && arr[0][2] == xx) {
 
-       printf("     1   2   3\n\n");
-    printf(" a   %c |", arr[0][0]);
-    printf(" %c |", arr[0][1]);
-    printf(" %c \n", arr[0][2]);
-    printf("    ---+---+---\n");
-
-    printf(" b   %c |", arr[1][0]);
-    printf(" %c |", arr[1][1]);
-    printf(" %c \n", arr[1][2]);
-    printf("    ---+---+---\n");
-
-    printf(" c   %c |", arr[2][0]);
-    printf(" %c |", arr[2][1]);
-    printf(" %c \n\n", arr[2][2]);
+       jogo(arr);
 
       printf("%s ganhou!!!" , player1.nome);
       v = 1;
@@ -229,20 +217,7 @@ scanf("%c" , &player2.forma);
 
     else if (arr[1][0] == arr[1][1] && arr[1][1] == arr[1][2] && arr[1][2] == xx) {
 
-       printf("     1   2   3\n\n");
-    printf(" a   %c |", arr[0][0]);
-    printf(" %c |", arr[0][1]);
-    printf(" %c \n", arr[0][2]);
-    printf("    ---+---+---\n");
-
-    printf(" b   %c |", arr[1][0]);
-    printf(" %c |", arr[1][1]);
-    printf(" %c \n", arr[1][2]);
-    printf("    ---+---+---\n");
-
-    printf(" c   %c |", arr[2][0]);
-    printf(" %c |", arr[2][1]);
-    printf(" %c \n\n", arr[2][2]);
+      jogo(arr);
 
       printf("%s ganhou!!!" , player1.nome);
       v = 1;
@@ -251,64 +226,21 @@ scanf("%c" , &player2.forma);
 
     else if (arr[2][0] == arr[2][1] && arr[2][1] == arr[2][2]  && arr[2][2] == xx) {
 
-       printf("     1   2   3\n\n");
-    printf(" a   %c |", arr[0][0]);
-    printf(" %c |", arr[0][1]);
-    printf(" %c \n", arr[0][2]);
-    printf("    ---+---+---\n");
-
-    printf(" b   %c |", arr[1][0]);
-    printf(" %c |", arr[1][1]);
-    printf(" %c \n", arr[1][2]);
-    printf("    ---+---+---\n");
-
-    printf(" c   %c |", arr[2][0]);
-    printf(" %c |", arr[2][1]);
-    printf(" %c \n\n", arr[2][2]);
-
-      printf("%s ganhou!!!" , player1.nome);
+      jogo(arr);
       v = 1;
       break;
     }
 
     else if (arr[0][0] == arr[1][0] && arr[1][0] == arr[2][0] && arr[2][0] == xx) {
 
-       printf("     1   2   3\n\n");
-    printf(" a   %c |", arr[0][0]);
-    printf(" %c |", arr[0][1]);
-    printf(" %c \n", arr[0][2]);
-    printf("    ---+---+---\n");
-
-    printf(" b   %c |", arr[1][0]);
-    printf(" %c |", arr[1][1]);
-    printf(" %c \n", arr[1][2]);
-    printf("    ---+---+---\n");
-
-    printf(" c   %c |", arr[2][0]);
-    printf(" %c |", arr[2][1]);
-    printf(" %c \n\n", arr[2][2]);
-
-      printf("%s ganhou!!!" , player1.nome);
+      jogo(arr);
       v = 1;
       break;
     }
 
     else if (arr[0][1] == arr[1][1] && arr[1][1] == arr[2][1] && arr[2][1] == xx) {
 
-       printf("     1   2   3\n\n");
-    printf(" a   %c |", arr[0][0]);
-    printf(" %c |", arr[0][1]);
-    printf(" %c \n", arr[0][2]);
-    printf("    ---+---+---\n");
-
-    printf(" b   %c |", arr[1][0]);
-    printf(" %c |", arr[1][1]);
-    printf(" %c \n", arr[1][2]);
-    printf("    ---+---+---\n");
-
-    printf(" c   %c |", arr[2][0]);
-    printf(" %c |", arr[2][1]);
-    printf(" %c \n\n", arr[2][2]);
+      jogo(arr);
 
       printf("%s ganhou!!!" , player1.nome);
       v = 1;
@@ -317,21 +249,8 @@ scanf("%c" , &player2.forma);
 
     else if (arr[0][2] == arr[1][2] && arr[1][2] == arr[2][2] && arr[2][2] == xx) {
 
-       printf("     1   2   3\n\n");
-    printf(" a   %c |", arr[0][0]);
-    printf(" %c |", arr[0][1]);
-    printf(" %c \n", arr[0][2]);
-    printf("    ---+---+---\n");
-
-    printf(" b   %c |", arr[1][0]);
-    printf(" %c |", arr[1][1]);
-    printf(" %c \n", arr[1][2]);
-    printf("    ---+---+---\n");
-
-    printf(" c   %c |", arr[2][0]);
-    printf(" %c |", arr[2][1]);
-    printf(" %c \n\n", arr[2][2]);
-
+      jogo(arr);
+      
     printf("%s ganhou!!!" , player1.nome);
       v = 1;
       break;
@@ -339,20 +258,7 @@ scanf("%c" , &player2.forma);
 
     else if (arr[0][0] == arr[1][1] && arr[1][1] == arr[2][2] && arr[2][2]== xx) {
 
-       printf("     1   2   3\n\n");
-    printf(" a   %c |", arr[0][0]);
-    printf(" %c |", arr[0][1]);
-    printf(" %c \n", arr[0][2]);
-    printf("    ---+---+---\n");
-
-    printf(" b   %c |", arr[1][0]);
-    printf(" %c |", arr[1][1]);
-    printf(" %c \n", arr[1][2]);
-    printf("    ---+---+---\n");
-
-    printf(" c   %c |", arr[2][0]);
-    printf(" %c |", arr[2][1]);
-    printf(" %c \n\n", arr[2][2]);
+       jogo(arr);
 
      printf("%s ganhou!!!" , player1.nome);
       v = 1;
@@ -361,20 +267,7 @@ scanf("%c" , &player2.forma);
 
     else if (arr[0][2] == arr[1][1] && arr[1][1] == arr[2][0] && arr[2][0] == xx) {
 
-       printf("     1   2   3\n\n");
-    printf(" a   %c |", arr[0][0]);
-    printf(" %c |", arr[0][1]);
-    printf(" %c \n", arr[0][2]);
-    printf("    ---+---+---\n");
-
-    printf(" b   %c |", arr[1][0]);
-    printf(" %c |", arr[1][1]);
-    printf(" %c \n", arr[1][2]);
-    printf("    ---+---+---\n");
-
-    printf(" c   %c |", arr[2][0]);
-    printf(" %c |", arr[2][1]);
-    printf(" %c \n\n", arr[2][2]);
+       jogo(arr);
 
      printf("%s ganhou!!!" , player1.nome);
       v = 1;
@@ -383,21 +276,8 @@ scanf("%c" , &player2.forma);
 
     else if (a1 && a2 && a3 && a4 && a5 && a6 && a7 && a8 && a9 == 1) {
 
-       printf("     1   2   3\n\n");
-    printf(" a   %c |", arr[0][0]);
-    printf(" %c |", arr[0][1]);
-    printf(" %c \n", arr[0][2]);
-    printf("    ---+---+---\n");
-
-    printf(" b   %c |", arr[1][0]);
-    printf(" %c |", arr[1][1]);
-    printf(" %c \n", arr[1][2]);
-    printf("    ---+---+---\n");
-
-    printf(" c   %c |", arr[2][0]);
-    printf(" %c |", arr[2][1]);
-    printf(" %c \n\n", arr[2][2]);
-
+       jogo(arr);
+      
       printf("Empate!!!");
       v = 1;
       break;
@@ -405,20 +285,7 @@ scanf("%c" , &player2.forma);
 
       while (1) {
 
-         printf("     1   2   3\n\n");
-    printf(" a   %c |", arr[0][0]);
-    printf(" %c |", arr[0][1]);
-    printf(" %c \n", arr[0][2]);
-    printf("    ---+---+---\n");
-
-    printf(" b   %c |", arr[1][0]);
-    printf(" %c |", arr[1][1]);
-    printf(" %c \n", arr[1][2]);
-    printf("    ---+---+---\n");
-
-    printf(" c   %c |", arr[2][0]);
-    printf(" %c |", arr[2][1]);
-    printf(" %c \n\n", arr[2][2]);
+        jogo(arr);
 
         printf("%s joga:\n" , player2.nome);
         int o;
@@ -534,20 +401,7 @@ scanf("%c" , &player2.forma);
 
     if (arr[0][0] == arr[0][1] && arr[0][1] == arr[0][2] && arr[0][2] == oo) {
 
-       printf("     1   2   3\n\n");
-    printf(" a   %c |", arr[0][0]);
-    printf(" %c |", arr[0][1]);
-    printf(" %c \n", arr[0][2]);
-    printf("    ---+---+---\n");
-
-    printf(" b   %c |", arr[1][0]);
-    printf(" %c |", arr[1][1]);
-    printf(" %c \n", arr[1][2]);
-    printf("    ---+---+---\n");
-
-    printf(" c   %c |", arr[2][0]);
-    printf(" %c |", arr[2][1]);
-    printf(" %c \n\n", arr[2][2]);
+      jogo(arr);
 
       printf("%s ganhou!!!" , player2.nome);
       v = 1;
@@ -556,20 +410,7 @@ scanf("%c" , &player2.forma);
 
     else if (arr[1][0] == arr[1][1] && arr[1][1] == arr[1][2] && arr[1][2] == oo) {
 
-       printf("     1   2   3\n\n");
-    printf(" a   %c |", arr[0][0]);
-    printf(" %c |", arr[0][1]);
-    printf(" %c \n", arr[0][2]);
-    printf("    ---+---+---\n");
-
-    printf(" b   %c |", arr[1][0]);
-    printf(" %c |", arr[1][1]);
-    printf(" %c \n", arr[1][2]);
-    printf("    ---+---+---\n");
-
-    printf(" c   %c |", arr[2][0]);
-    printf(" %c |", arr[2][1]);
-    printf(" %c \n\n", arr[2][2]);
+       jogo(arr);
 
        printf("%s ganhou!!!" , player2.nome);
       v = 1;
@@ -578,20 +419,7 @@ scanf("%c" , &player2.forma);
 
     else if (arr[2][0] == arr[2][1] && arr[2][1] == arr[2][2] && arr[2][2] == oo) {
 
-       printf("     1   2   3\n\n");
-    printf(" a   %c |", arr[0][0]);
-    printf(" %c |", arr[0][1]);
-    printf(" %c \n", arr[0][2]);
-    printf("    ---+---+---\n");
-
-    printf(" b   %c |", arr[1][0]);
-    printf(" %c |", arr[1][1]);
-    printf(" %c \n", arr[1][2]);
-    printf("    ---+---+---\n");
-
-    printf(" c   %c |", arr[2][0]);
-    printf(" %c |", arr[2][1]);
-    printf(" %c \n\n", arr[2][2]);
+      jogo(arr);
 
       printf("%s ganhou!!!" , player2.nome);
       v = 1;
@@ -600,20 +428,7 @@ scanf("%c" , &player2.forma);
 
     else if (arr[0][0] == arr[1][0] && arr[1][0] == arr[2][0] && arr[2][0] == oo) {
 
-       printf("     1   2   3\n\n");
-    printf(" a   %c |", arr[0][0]);
-    printf(" %c |", arr[0][1]);
-    printf(" %c \n", arr[0][2]);
-    printf("    ---+---+---\n");
-
-    printf(" b   %c |", arr[1][0]);
-    printf(" %c |", arr[1][1]);
-    printf(" %c \n", arr[1][2]);
-    printf("    ---+---+---\n");
-
-    printf(" c   %c |", arr[2][0]);
-    printf(" %c |", arr[2][1]);
-    printf(" %c \n\n", arr[2][2]);
+       jogo(arr);
 
      printf("%s ganhou!!!" , player2.nome);
       v = 1;
@@ -622,20 +437,7 @@ scanf("%c" , &player2.forma);
 
     else if (arr[0][1] == arr[1][1] && arr[1][1] == arr[2][1] && arr[2][1] == oo) {
 
-       printf("     1   2   3\n\n");
-    printf(" a   %c |", arr[0][0]);
-    printf(" %c |", arr[0][1]);
-    printf(" %c \n", arr[0][2]);
-    printf("    ---+---+---\n");
-
-    printf(" b   %c |", arr[1][0]);
-    printf(" %c |", arr[1][1]);
-    printf(" %c \n", arr[1][2]);
-    printf("    ---+---+---\n");
-
-    printf(" c   %c |", arr[2][0]);
-    printf(" %c |", arr[2][1]);
-    printf(" %c \n\n", arr[2][2]);
+       jogo(arr);
 
       printf("%s ganhou!!!" , player2.nome);
       v = 1;
@@ -644,20 +446,7 @@ scanf("%c" , &player2.forma);
 
     else if (arr[0][2] == arr[1][2] && arr[1][2] == arr[2][2] && arr[2][2] == oo) {
 
-       printf("     1   2   3\n\n");
-    printf(" a   %c |", arr[0][0]);
-    printf(" %c |", arr[0][1]);
-    printf(" %c \n", arr[0][2]);
-    printf("    ---+---+---\n");
-
-    printf(" b   %c |", arr[1][0]);
-    printf(" %c |", arr[1][1]);
-    printf(" %c \n", arr[1][2]);
-    printf("    ---+---+---\n");
-
-    printf(" c   %c |", arr[2][0]);
-    printf(" %c |", arr[2][1]);
-    printf(" %c \n\n", arr[2][2]);
+      jogo(arr);
 
       printf("%s ganhou!!!" , player2.nome);
       v = 1;
@@ -666,20 +455,7 @@ scanf("%c" , &player2.forma);
 
     else if (arr[0][0] == arr[1][1] && arr[1][1] == arr[2][2] && arr[2][2] == oo) {
 
-       printf("     1   2   3\n\n");
-    printf(" a   %c |", arr[0][0]);
-    printf(" %c |", arr[0][1]);
-    printf(" %c \n", arr[0][2]);
-    printf("    ---+---+---\n");
-
-    printf(" b   %c |", arr[1][0]);
-    printf(" %c |", arr[1][1]);
-    printf(" %c \n", arr[1][2]);
-    printf("    ---+---+---\n");
-
-    printf(" c   %c |", arr[2][0]);
-    printf(" %c |", arr[2][1]);
-    printf(" %c \n\n", arr[2][2]);
+      jogo(arr);
 
        printf("%s ganhou!!!" , player2.nome);
       v = 1;
@@ -688,20 +464,7 @@ scanf("%c" , &player2.forma);
 
     else if (arr[0][2] == arr[1][1] && arr[1][1] == arr[2][0] && arr[2][0] == oo) {
 
-       printf("     1   2   3\n\n");
-    printf(" a   %c |", arr[0][0]);
-    printf(" %c |", arr[0][1]);
-    printf(" %c \n", arr[0][2]);
-    printf("    ---+---+---\n");
-
-    printf(" b   %c |", arr[1][0]);
-    printf(" %c |", arr[1][1]);
-    printf(" %c \n", arr[1][2]);
-    printf("    ---+---+---\n");
-
-    printf(" c   %c |", arr[2][0]);
-    printf(" %c |", arr[2][1]);
-    printf(" %c \n\n", arr[2][2]);
+       jogo(arr);
 
        printf("%s ganhou!!!" , player2.nome);
       v = 1;
@@ -711,3 +474,4 @@ scanf("%c" , &player2.forma);
 
   return 0;
 }
+
